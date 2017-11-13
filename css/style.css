@@ -93,6 +93,10 @@
 	{
 		margin-bottom: 1em;
 	}
+
+	custom-control .custom-radio {
+		margin: 10px 10px 10px 10px;
+	}
 	
 		header h2
 		{
@@ -113,6 +117,17 @@
 	br.clear
 	{
 		clear: both;
+	}
+
+	/* New Pet Post Stuff */
+	#success-page 
+	{
+		display: none;
+	}
+
+	#form-fillout
+	{
+		
 	}
 
 	/* Sections/Articles */
