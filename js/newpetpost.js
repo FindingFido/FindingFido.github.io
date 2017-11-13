@@ -78,9 +78,5 @@ function submitFunction() {
 
 
 
-
-
-
-
 	return false
 }
