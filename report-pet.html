@@ -22,6 +22,8 @@
 
 		<!--Font Awesome (added because you use icons in your prepend/append)-->
 		<link rel="stylesheet" href="https://formden.com/static/cdn/font-awesome/4.4.0/css/font-awesome.min.css" />
+
+
 		
 
 
@@ -81,7 +83,7 @@
 								<h2 id="newpost-header">Lost Dog</h2>
 								<span class="byline"></span>
 							</header>
-							<a href="images/dog01.jpg" class="image profile"><img src="images/dog01.jpg" alt="" /></a>
+							<a href="images/dog01.jpg" class="image profile" id="pet-image"><img src="images/dog01.jpg" alt="" /></a>
 							<ul class="style posted">
 								<li id="pet-name" first-child><b>Name: </b>Dexter</li>
 								<li id="pet-gender"><b>Gender: </b>Male</li>
@@ -171,24 +173,6 @@
 							    </div>
 							  </div>
 
-						   <!--  <div class="row">
-						        <div class='col-sm-6'>
-						            <div class="form-group">
-						            	<label for="pwd">Date/Time Last Seen or Found</label>
-						                <div class='input-group date' id='datetimepicker'>
-						                    <input type='text' class="form-control" />
-						                    <span class="input-group-addon">
-						                        <span class="glyphicon glyphicon-calendar"></span>
-						                    </span>
-						                </div>
-						            </div>
-						        </div>
-						        <script type="text/javascript">
-						            $(function () {
-						                $('#datetimepicker').datetimepicker();
-						            });
-						        </script>
-						    </div> -->
 						    <div class="row">
 							    <div class='col-sm-6'>
 							    	<div class="form-group">
@@ -228,8 +212,8 @@
 
 							<div class="form-group">
 							    <label for="exampleInputFile">Picture of Pet</label>
-							    <input type="file" accept = '.jpg|.jpeg|.png' class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
-							    <small id="fileHelp" class="form-text text-muted">Accepted Formats: .jpg .jpeg .png</small>
+							    <input type="file" accept = 'image/jpeg, image/png' .png' class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
+							    <small id="fileHelp" class="form-text text-muted">Accepted Formats: .jpg .png</small>
 							 </div>
 
 							<div class="form-group">

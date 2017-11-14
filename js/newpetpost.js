@@ -19,13 +19,13 @@ function submitFunction() {
 	var isLargePet = form.elements[8].checked;
 	var isXLargePet = form.elements[9].checked;
 	var dateTimeLastSeen = form.elements[10].value;
-	console.log(dateTimeLastSeen)
 	var locationLastSeen = form.elements[11].value;
 	var city = form.elements[12].value;
 	var state = form.elements[13].value;
 	var zipcode = form.elements[14].value;
 	var description = form.elements[15].value;
-	var photo = form.elements[16]
+	var photo = form.elements[16].files[0];
+	console.log(photo)
 	var contactPhone = form.elements[17].value;
 	var contactEmail = form.elements[18].value;
 
@@ -37,11 +37,20 @@ function submitFunction() {
 		document.getElementById("newpost-header").innerHTML = "Found Pet";
 	}
 
+	// Set Picture
+	document.getElementById("pet-image").src = photo;
+
 	// Set Name
 	document.getElementById("pet-name").innerHTML = "<b>Name: </b>" + petName;
 
 	// Set Gender
-	document.getElementById("pet-gender").innerHTML = "<b>Gender: </b>" + gender;
+	if (gender == "Select a Gender") {
+		document.getElementById("pet-gender").innerHTML = "<b>Gender: </b>";
+	}
+	else {
+		document.getElementById("pet-gender").innerHTML = "<b>Gender: </b>" + gender;
+	}
+	
 
 	// Set Breed
 	document.getElementById("pet-breed").innerHTML = "<b>Breed: </b>" + breed;
