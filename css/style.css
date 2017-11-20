@@ -8,6 +8,29 @@
 /* Basic                                                                         */
 /*********************************************************************************/
 
+    .faq_question 
+    {
+    margin: 0px;
+    padding: 0px 0px 5px 0px;
+    display: inline-block;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14pt;
+    transition: background-color;
+    }
+
+    .faq_question:hover 
+    {
+    background-color: lightgrey;
+    }
+ 
+    .faq_answer_container 
+    {
+    height: 0px;
+    overflow: hidden;
+    padding: 0px;
+    }
+
 	body
 	{
 		background: #141414;
